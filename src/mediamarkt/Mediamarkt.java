@@ -20,7 +20,7 @@ public class Mediamarkt {
             Statement s=conexion.createStatement();
             
             //4. Trabajo con las consultas
-            ResultSet rs=s.executeQuery("SELECT* FROM PRODUCTOS");
+            ResultSet rs=s.executeQuery("SELECT id, nombre, precio FROM PRODUCTOS");
             while(rs.next()){
                 System.out.println(rs.getInt("id")+" "+
                         rs.getString("nombre")+" "+
